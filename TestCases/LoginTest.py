@@ -13,6 +13,10 @@ class Test_Login(Baseclass):
         self.driver.find_element(By.NAME, "label_button_login").click()
         user_login= self.driver.find_element(By.ID,"loginDetails").text
         assert user_login == "surname_1, firstname_1"
+        '''
+        This is a multiline
+        comment.
+        '''
         logout = Test_Logout(self.driver)
         logout.test_logout()
 
